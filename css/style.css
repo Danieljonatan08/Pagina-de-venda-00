@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+
+}
+html,body{
+    height: 100%;
+    
+}
+.clear{
+    clear: both;
+}
+
+header {
+    height: 100px;
+    padding: 30px 0;
+    }
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin:0 auto;
+    }
+header .container-logo{
+    float: left;
+}
+
+header .container-logo img{
+    height: 50px;
+    width: 100px;
+    margin-left: 30px;
+    
+}
+header nav.desktop{
+    float: right;
+    position: relative;
+    top: 10px;
+    
+}
+nav.mobile{
+    display: none;
+    float: right;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    background-image: url('../imagens/icon_menu.png');
+    cursor: pointer;
+    display: none;
+
+}
+nav.mobile li{
+    padding: 10px 0px;
+    font-style: italic;
+    
+}
+
+
+nav.mobile ul{
+    z-index: 999;
+    margin-top: 90px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    
+}
+
+header .container > nav.desktop ul li{
+    display: inline;
+    font-style: italic;
+    
+}
+
+
+
+header .container > nav ul li a{
+    text-decoration: none; 
+    padding: 8px;
+    color:black;
+    font-size: 20px;
+    
+    
+}
+
+section.banner{
+    overflow: hidden;
+    height: 600px;
+    background-color: black;
+    background-image: url('../imagens/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+   
+}
+.text-banner{
+    padding: 100px;
+
+}
+.text-banner-single{
+    background-image: url('../imagens/box-text.png');
+    margin: 20px;
+    padding: 10px 30px;
+    width: 320px;
+    height: 50px;
+    font-style: italic;
+    position: relative;
+    text-align: left;
+    color:white;
+    font-size: 23px;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    
+}
+.text-banner-single:nth-of-type(2){
+    width: 200px;
+    position: relative;
+    left: -10px;
+}
+.text-banner-single:nth-of-type(3){
+    width: 120px;
+    position: relative;
+    left: -20px;
+}
+    
+.text-banner-single:nth-of-type(4){
+    font-size: 20px;
+    width: 320px;
+    position: relative;
+    left: -30px;
+    color: black;
+    background-image: url('../imagens/box-white-text.png');
+    
+}
+section.veiculos-destaque{
+    padding: 90px 2%;
+}
+.line-titulo{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    font-style: italic;
+}
+.ln1{
+    top: 13px;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    
+}
+
+section.veiculos-destaque h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-style: 27px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    padding: 0 10px;
+
+}
+.grid-container-cars {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 400px;
+    gap: 7px;
+    padding: 10px;
+    
+  }
+  
+.grid-container-cars > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border-right: solid 2px rgb(199, 192, 192);
+    border-bottom: solid 5px  rgb(207, 207, 207);
+    
+  }
+  .grid-container-cars > div .container-image{
+    width: 100%;
+    height: 200px;
+    background-image: url('../imagens/carro1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  
+    
+  }
+
+  .grid-container-cars > div h2{
+    font-size: 24px;
+    font-weight: 900;
+
+  }
+  .grid-container-cars > div  p{
+    font-size:20px ;
+
+  }
+
+button{
+    background-color: #EB2D2D;
+    border: 2px;
+    font-size: 15px;
+    color: white;
+    border-bottom: solid 5px #ac2e2e;
+    height: 40px;
+    width: 100px;
+  }
+
+.half1{
+    float: left;
+    text-align: center;
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+.half1-wraper{
+    display: inline-block;
+    text-align: left;
+    
+}
+.half1-wraper h2{
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+.half1-wraper ul{
+    display: inline-block;
+    margin-top: 20px;
+    list-style-position: inside;
+    
+}
+.half1-wraper li{
+    margin-left: 15px;
+    font-size: 16px;
+}
+.half1-wraper button {
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+    
+
+}
+
+
+@media screen and (max-width: 1400px){
+    section.banner{
+        background-size:90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    section.banner{
+        background-size: cover;
+        background-position: center;
+        height: 70vw;
+        min-height: 500px;
+    }
+}
+@media screen and (max-width:768px){
+    nav.desktop{
+        display: none;
+    } 
+    nav.mobile{
+        display: block;
+
+    }
+}
+
+@media screen and (max-width:580px){
+    .text-banner{
+        padding: 30px ;
+    }
+
+    .text-banner-single{
+        font-size: 15px;
+        width: 250px;
+
+        
+    }
+    
+    .text-banner-single:nth-of-type(2){
+        width: 200px;
+        position: relative;
+        left: -10px;
+    }
+    .text-banner-single:nth-of-type(3){
+        width: 150px;
+        position: relative;
+        left: -20px;
+    }
+        
+    .text-banner-single:nth-of-type(4){
+        width: 250px;
+        position: relative;
+        left: -30px;
+    }
+    
+
+}
