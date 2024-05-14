@@ -7,6 +7,7 @@
 }
 html,body{
     height: 100%;
+    width: 100% 2%;
     
 }
 .clear{
@@ -154,7 +155,7 @@ section.veiculos-destaque{
     
 }
 
-section.veiculos-destaque h2{
+.line-titulo h2{
     text-align: center;
     text-transform: uppercase;
     font-style: italic;
@@ -179,8 +180,6 @@ section.veiculos-destaque h2{
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    border-right: solid 2px rgb(199, 192, 192);
-    border-bottom: solid 5px  rgb(207, 207, 207);
     
   }
   .grid-container-cars > div .container-image{
@@ -208,6 +207,7 @@ section.veiculos-destaque h2{
 }
 
 button{
+    cursor: pointer;
     background-color: #EB2D2D;
     border: 2px;
     font-size: 15px;
@@ -252,9 +252,9 @@ button{
 
 }
 .half2{
-
     width: 50%;
-    padding: 90px 0;
+    padding: 90px 10px;
+    margin-right: 5px;
     background-color: rgb(235, 45, 45);
     color: white;
     
@@ -266,8 +266,9 @@ button{
     margin-left: 40px;
 }
 .half2 p{
+    
     margin-top: 15px;
-    margin-left: 40px;
+    margin-left: 30px ;
     font-size: 18px;
     
 }
@@ -289,6 +290,78 @@ button{
     font-weight: bold;
     font-size: 18px;
     text-align: center;
+}
+section.contato{
+    padding-top: 40px;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+
+}
+section.contato .input-wraper{
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8px;
+}
+section.contato textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+
+section form .w100{
+    text-align: center;
+    
+}
+
+footer .container-footer{
+    padding: 40px 2%;
+    background-color: #252525;
+    width: 100%;
+    
+    
+}
+.container-nav{
+    float: left;
+    
+}
+.container-nav ul li{
+    list-style-type: none;
+    display: inline;
+  
+}
+.container-nav ul li a{
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    padding:0 5px;
+    font-size: 18px;
+}
+.container-footer p{
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    float: right;
+    
+
 }
 
 @media screen and (max-width: 1400px){
@@ -327,6 +400,42 @@ button{
         display: block;
 
     }
+    .servicos-descricao{
+        display: block;
+    }
+
+    .grid-container-cars {
+        display: block;
+      
+        padding: 90px;
+        
+      }
+      
+    .grid-container-cars > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        
+      }
+
+    .half1,.half2{
+        width: 100%;
+        padding: 80px 4%;
+        
+    }
+
+    footer nav{
+        display: none;
+    }
+    footer{
+        text-align: center;
+
+    }
+    .container-footer p{
+        float: none;
+        
+    }
+
 }
 
 @media screen and (max-width:580px){
